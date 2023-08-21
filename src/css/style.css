@@ -70,7 +70,6 @@ main .personagem .imagem {
     z-index: 2;
     gap: 10px;
     background: rgba(0, 0, 0, 0.30);
-    backdrop-filter: blur(2px);
 }
 
 .botoes .botao{
