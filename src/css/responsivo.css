@@ -12,7 +12,7 @@
         padding: 30px;
         justify-content: flex-end;
         left: 0;
-        top: -10%;
+        top: -20%;
     }
     .personagens .personagem .conteudo .logo{
         margin-bottom: 0;
@@ -40,7 +40,10 @@
      main::after{
         min-height: 100%;
         width: 100vw;
-        background: linear-gradient(0deg, #000 45%, rgba(0, 0, 0, 0.00) 65%) no-repeat;
+        background: linear-gradient(0deg, #000 25%, rgba(0, 0, 0, 0.00) 75%) no-repeat;
+    }
+    main .personagem .imagem{
+        height: auto;
     }
     .personagens .personagem .conteudo .logo{
         max-width: 135px;
@@ -50,9 +53,14 @@
     }
     .personagens .personagem .conteudo{
         padding: 20px;
+        top: -25%;
+    }
+    .personagens .personagem .conteudo .descricao{
+        max-width: 330px;
     }
     .botoes{
         padding: 20px;
+        top: -10%;
     }
     .botoes .botao img{
         max-width: 50px;
