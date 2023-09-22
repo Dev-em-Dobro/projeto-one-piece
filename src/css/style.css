@@ -4,6 +4,7 @@ body{
     background-color: #000;
 }
 
+/* isso daria pra fazer por ultimo só como uma firula */
 main::after {
 	content: '';
 	min-height: 100%;
