@@ -14,7 +14,7 @@ function removerSelecionado(botao){
     botao.classList.add('selecionado');
 }
 function mudarPersonagem(indice){
-    const personagemAtivo = document.querySelector('.ativo');
-    personagemAtivo.classList.remove('ativo');
-    personagens[indice].classList.add('ativo');
+    const personagemAtivo = document.querySelector('.selecionado');
+    personagemAtivo.classList.remove('selecionado');
+    personagens[indice].classList.add('selecionado');
 }
