@@ -1,68 +1,52 @@
 @media (max-width: 769px) {
-    main::after{
-        min-height: 100%;
-        width: 100vw;
-        background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0.00) 65%) no-repeat;
-    }
-    main .personagem .imagem{
-        height: 85%;
-    }
-    .personagens .personagem .conteudo{
-        max-width: 100%;
-        padding: 30px;
-        justify-content: flex-end;
-        left: 0;
-        top: -20%;
-    }
-    .personagens .personagem .conteudo .logo{
-        margin-bottom: 0;
-    }
-    .personagens .personagem .conteudo .nome-personagem{
-        font-size: 36px;
-    }
-    .personagens .personagem .conteudo .descricao{
-        max-width: 500px;
-    }
-    .botoes{
-        width: 100%;
-        flex-direction: row;
-        align-items: flex-end;
-        right: initial;
-        padding: 30px;
-    }
-    .botoes .botao img{
-        max-width: 60px;
-    }
+  main::after {
+    background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0) 65%) no-repeat;
+    width: 100vw;
+  }
 
+  main .personagem .imagem {
+    height: 85%;
+  }
+
+  .personagem .conteudo {
+    justify-content: flex-end;
+    left: 0;
+    top: -20%;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .conteudo .nome-personagem {
+    font-size: 36px;
+  }
+
+  .conteudo .descricao {
+    max-width: 500px;
+  }
+
+  .botoes {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .botoes .botao img {
+    max-width: 60px;
+  }
 }
 
-@media(max-width: 425px){
-     main::after{
-        min-height: 100%;
-        width: 100vw;
-        background: linear-gradient(0deg, #000 25%, rgba(0, 0, 0, 0.00) 75%) no-repeat;
-    }
-    main .personagem .imagem{
-        height: auto;
-    }
-    .personagens .personagem .conteudo .logo{
-        max-width: 135px;
-    }
-    .personagens .personagem .conteudo .nome-personagem{
-        font-size: 24px;
-    }
-    .personagens .personagem .conteudo{
-        padding: 20px;
-        top: -25%;
-    }
-    .personagens .personagem .conteudo .descricao{
-        max-width: 330px;
-    }
-    .botoes{
-        padding: 20px;
-        top: -10%;
-    }
-    .botoes .botao img{
-        max-width: 50px;
-    }
+@media (max-width: 425px) {
+  .conteudo .logo {
+    width: 170px;
+    height: 75px;
+  }
+
+  main .personagem .imagem {
+    height: auto;
+  }
+
+  .conteudo .nome-personagem {
+    font-size: 24px;
+  }
 }
