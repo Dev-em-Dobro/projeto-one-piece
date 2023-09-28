@@ -3,18 +3,19 @@ const personagens = document.querySelectorAll('.personagem');
 
 botoes.forEach((botao, indice) => {
     botao.addEventListener('click', () => {
-        removerSelecionado(botao)
-        mudarPersonagem(indice)
+        removerSelecionado()
+        adicionarSelecionado(indice)
     })
 })
 
-function removerSelecionado(botao){
-    const botaoAtivo = document.querySelector('.selecionado');
+function removerSelecionado(){
+    const botaoAtivo = document.querySelector('.botao.selecionado');
     botaoAtivo.classList.remove('selecionado');
-    botao.classList.add('selecionado');
-}
-function mudarPersonagem(indice){
-    const personagemAtivo = document.querySelector('.selecionado');
+    
+    const personagemAtivo = document.querySelector('.personagem.selecionado');
     personagemAtivo.classList.remove('selecionado');
+}
+function adicionarSelecionado(indice){
     personagens[indice].classList.add('selecionado');
+    botoes[indice].classList.add('selecionado');
 }
